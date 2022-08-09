@@ -11,7 +11,7 @@ export const allPostsQuery = () => {
       userId,
       postedBy->{
         _id,
-        userName,
+        name,
         image
       },
     likes,
@@ -20,7 +20,7 @@ export const allPostsQuery = () => {
       _key,
       postedBy->{
       _id,
-      userName,
+      name,
       image
     },
     }
@@ -42,7 +42,7 @@ export const postDetailQuery = (postId: string | string[]) => {
       userId,
     postedBy->{
       _id,
-      userName,
+      name,
       image
     },
      likes,
